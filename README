@@ -1,0 +1,8 @@
+CS 456 Assignment 1 
+Jia Yi Yan
+
+To run this program, run './server.sh <req_code>' followed by './client.sh <server address> <n_port> <req_code> message'.
+
+Built on ubuntu1804-008 and tested on ubuntu1804-008 and ubuntu1804-004.
+
+Used Python 2.7.15rc1 (the default when running 'python client.py ...').
