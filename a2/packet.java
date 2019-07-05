@@ -56,6 +56,10 @@ public class packet {
 	public byte[] getData() {
 		return data.getBytes();
 	}
+  
+  public String getString() {
+    return data;
+  }
 	
 	//////////////////////////// UDP HELPERS ///////////////////////////////////////
 	
