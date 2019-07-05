@@ -13,6 +13,7 @@ nEmulator 9991 host2 9994 9993 host3 9992 1 0.2 0
 java receiver host1 9993 9994 <output file>
 java sender host1 9991 9992 <input file>
 
-Built on ubuntu1804-004, tested on ubuntu1804-008, ubuntu1804-004 (), ubuntu1804-002
-
-Used java
+Built on ubuntu1804-004 (student.cs.uwaterloo.ca environment)
+Tested on ubuntu1804-008 (sender), ubuntu1804-004 (emulator), ubuntu1804-002 (receiver)
+Used GNU Make 4.1 for makefile
+Used javac 11.0.3 to compile
