@@ -8,10 +8,10 @@ To use OSPF, run
 
 where
 - <routers_host> is the host where the routers are running
-- <router_id> is an integer that represents the router id
-- <nse_host> is the host where the NSE is running
-- <nse_port> is the port number of the NSE
-- <router_port> is the router port
+- <router_id> is an integer that represents the router id
+- <nse_host> is the host where the NSE is running
+- <nse_port> is the port number of the NSE
+- <router_port> is the router port
 
 Afterwards, press Ctrl-C to exit the each router program and the logs will be in router<router_id>.log
 
