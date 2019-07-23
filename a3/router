@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#CS 456 Assignment 3
+#
+#Number of parameters: 1
+#Parameters:
+#    $1: <router_id>
+#    $2: <nse_host>
+#    $3: <nse_port>
+#    $4: <router_port>
+
+python3 router.py $1 $2 $3 $4 > router$1.log

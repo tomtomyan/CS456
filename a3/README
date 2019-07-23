@@ -1,0 +1,20 @@
+CS 456 Assignment 3
+
+To use OSPF, run
+
+./nse-linux386 <routers_host> <nse_port>
+
+./router <router_id> <nse_host> <nse_port> <router_port> (5 times for each router_id 1-5)
+
+where
+- <routers_host> is the host where the routers are running
+- <router_id> is an integer that represents the router id
+- <nse_host> is the host where the NSE is running
+- <nse_port> is the port number of the NSE
+- <router_port> is the router port
+
+Afterwards, press Ctrl-C to exit the each router program and the logs will be in router<router_id>.log
+
+Built on ubuntu1804-004 (student.cs.uwaterloo.ca environment)
+Tested on ubuntu1804-004
+Used Python 3.6.7
