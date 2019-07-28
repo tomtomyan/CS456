@@ -126,12 +126,6 @@ while True:
             LSDB[r_id-1].append((link_id, cost))
             # Print Topology
             print_topology(LSDB)
-            # Forward to rest of neighbours
-            for l, c in neighbours:
-                if l != via:
-                    pkt_LSPDU = pkt_INIT + to_bytearray(r_id) + to_bytearray(link_id) + to_bytearray(cost) + to_bytearray(l)
-                    socket.sendto(pkt_LSPDU, (nse_host, nse_port))
-                    print("R" + str(router_id) + " sends an LS PDU: sender " + str(router_id) + " router_id " + str(r_id) + " link_id " + str(link_id) + " cost " + str(cost) + " via " + str(l))
             # Run Dijsktra's algorithm on LSDB
             N = [router_id]
             # Routing Information Base
@@ -158,3 +152,9 @@ while True:
                         D[v-1] = alt
                         P[v-1] = w
             print_RIB(D, P)
+            # Forward to rest of neighbours
+            for l, c in neighbours:
+                if l != via:
+                    pkt_LSPDU = pkt_INIT + to_bytearray(r_id) + to_bytearray(link_id) + to_bytearray(cost) + to_bytearray(l)
+                    socket.sendto(pkt_LSPDU, (nse_host, nse_port))
+                    print("R" + str(router_id) + " sends an LS PDU: sender " + str(router_id) + " router_id " + str(r_id) + " link_id " + str(link_id) + " cost " + str(cost) + " via " + str(l))

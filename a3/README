@@ -16,5 +16,5 @@ where
 Afterwards, press Ctrl-C to exit the each router program and the logs will be in router<router_id>.log
 
 Built on ubuntu1804-004 (student.cs.uwaterloo.ca environment)
-Tested on ubuntu1804-004
+Tested on ubuntu1804-004 (routers) and ubuntu1804-002 (nse)
 Used Python 3.6.7
